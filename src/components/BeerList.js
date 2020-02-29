@@ -10,7 +10,7 @@ const promise = getBeers()
 
 function Beers({props}) {
   const [beers, setBeers] = useState([])
-  const [filter, setFilter] = useState("")
+  const [filter, setFilter] = useState('')
   const [beerLikes, setBeerLikes] = useState([])
   const [isLoading, setLoading] = useState(true)
   const [beerCards, setBeerCards] = useState([])
@@ -20,7 +20,6 @@ function Beers({props}) {
     promise.then(beerPosts => {
       setBeers(beerPosts)
       setLoading(false)
-      getBeerCards()
       console.log("Beers: ", beerPosts)
       if (localStorage.getItem('beerLikes')) {
         setBeerLikes(JSON.parse(localStorage.getItem('beerLikes')))
@@ -34,6 +33,8 @@ function Beers({props}) {
       }
     })
   }, [isLoading])
+
+  useEffect(() => getBeerCards)
 
   const toggleBeerLike = (beerName) => {
     let newLikes = beerLikes
@@ -77,7 +78,7 @@ function Beers({props}) {
     setBeerCards(allBeerCards)
   }
 
-  console.log("Cards: ", beerCards)
+
   const allBeerCards = beerCards.map((beer) => 
   <Grid item xs={12} md={6} key={beer.beerName}>
     <BeerCard 

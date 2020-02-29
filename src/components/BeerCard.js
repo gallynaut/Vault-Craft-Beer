@@ -43,6 +43,9 @@ const useStyles = makeStyles(theme => ({
     height: 64,
     width: 64,
     top: theme.spacing(2),
+    [theme.breakpoints.down('md')]: {
+      right: theme.spacing(4),
+    },
     // right: theme.spacing(2),
   },
   avatarSmall: {
@@ -55,20 +58,16 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function BeerCard(props) {
-  // const [beer, setBeer] = useState({...initialProps})
-  // const { name, brewery, type, location, description, abv, color, isLiked, toggleLike, url } = props
-  const [isLiked, setLiked] = useState(props.isLiked)
-  // const [, updateState] = React.useState();
-  // const forceUpdate = React.useCallback(() => updateState({}), []);
+  const [isLiked, setIsLiked] = useState(props.isLiked)
 
   const likeToggle = () => {
     props.toggleLike()
-    setLiked(!isLiked)
-    console.log("updating")
+    setIsLiked(!isLiked)
   }
-  // useEffect(() => {
-  //   setLiked(props.liked)
-  // }, [props.liked])
+
+  useEffect(() => {
+    setIsLiked(props.isLiked)
+  }, [props.isLiked])
 
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
@@ -139,7 +138,6 @@ BeerCard.propTypes = {
   location: PropTypes.string.isRequired,
   color: PropTypes.string,
   isLiked: PropTypes.bool.isRequired,
-  allLikes: PropTypes.any,
   liked: PropTypes.bool,
   toggleLike: PropTypes.func,
 }

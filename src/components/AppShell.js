@@ -32,7 +32,6 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
 import About from './About'
-import BeerList2 from './BeerList2'
 import { getBeers } from '../contentful'
 
 const beerPromise = getBeers()
@@ -185,7 +184,6 @@ export default function AppShell(props) {
     beerPromise.then(beerPosts => {
       setBeers(beerPosts)
       setLoading(false)
-      console.log("Beers: ", beerPosts)
     })
   }, [isLoading])
 
@@ -353,7 +351,6 @@ export default function AppShell(props) {
           <Toolbar id="beers" className={classes.divider}/>
 
           {beerList}
-          <BeerList2 />
           <Toolbar className={classes.divider}/>
           <Divider />
           <Toolbar id="contact" className={classes.divider}/>
