@@ -1,0 +1,84 @@
+{
+    "beers": [
+        {
+            "beerName": "Juicy Bits", 
+            "breweryName": "WeldWerks Brewing Co.", 
+            "beerType": "New England IPA",
+            "breweryLocation": "Greely, CO", 
+            "beerDescription": "Our version of a New England-style IPA featuring a huge citrus and tropical fruit hop character from the Mosaic, Citra, and El Dorado hops and softer, smoother mouthfeel from the adjusted water chemistry, higher protein malts, and lower attenuation. The end result is a beer reminiscent of citrus juice with extra pulp, thus the name Juicy Bits.", 
+            "beerABV": 6.7,
+            "beerPrimaryColor": "#ff9001",
+            "url": "https://untappd.com/b/weldwerks-brewing-co-juicy-bits/1460137"
+        },
+        {
+            "beerName": "Hell Yes Ma'am", 
+            "breweryName": "Raleigh Brewing Company", 
+            "beerType": "Golden", 
+            "breweryLocation": "Raleigh, NC", 
+            "beerDescription": "We’re a little rebel & rough house. A city that’s a healthy heaping of Southern grit topped with a touch of Southern charm. HellYesMa’am is a tribute to Raleigh in the form of a fruity, spicy, pleasantly warming and dangerously drinkable Belgian Golden. We use premium Belgian Pilsner malt, organic cane sugar, noble hops, and a magnificently complex Belgian yeast that gives our Golden its dry, kick-tail complexity. This beauty rings in at 9.2% ABV.", 
+            "beerABV": 9.2,
+            "beerPrimaryColor": "#cd7300",
+            "url": "https://untappd.com/b/raleigh-brewing-company-hell-yes-ma-am/322756"
+        },
+        {
+            "beerName": "Bramble Blond", 
+            "breweryName": "Compass Rose Brewery", 
+            "beerType": "Sour", 
+            "breweryLocation": "NC", 
+            "beerDescription": "Ripe blackberry and citrus on the nose; refreshingly tart and initially sweet, leading to a quenching and clean finish of lingering pilsner malt", 
+            "beerABV": 5.7,
+            "beerPrimaryColor": "#F77433",
+            "url": "https://untappd.com/b/compass-rose-brewery-bramble-blond/2658177"
+        },
+        {
+            "beerName": "Key Lime Pie Berliner", 
+            "breweryName": "WeldWerks Brewing Co.", 
+            "beerType": "Sour", 
+            "breweryLocation": "Greely, CO", 
+            "beerDescription": "Freshly squeezed key limes, vanilla beans, and just a hint of graham cracker pair perfectly with the tart wheat base beer in our Key Lime Pie Berliner. We colored a bit outside the lines to recreate our favorite summer dessert, adding over 250 lbs of key limes for the signature citrus character, lactose and vanilla beans for the pie filling, and just a hint of graham cracker for the crust. Tart, creamy, complex, and dangerously drinkable, KLPB is the perfect way to kick off the summer.", 
+            "beerABV": 4,
+            "beerPrimaryColor": "#F9DF5F",
+            "url": "https://untappd.com/b/weldwerks-brewing-co-key-lime-pie-berliner/2089418"
+        },
+        {
+            "beerName": "Hefeweizen", 
+            "breweryName": "WeldWerks Brewing Co.", 
+            "beerType": "Hefeweizen", 
+            "breweryLocation": "Greely, CO", 
+            "beerDescription": "We start with a traditional German Hefeweizen recipe, using 50% wheat malt and 50% Pilsner malt. Without being too irreverent to the original style, we add our own creative spin, with a sizeable whirlpool hop addition and the use of a Bavarian yeast strain, which contributes the classic Hefeweizen banana character, but with a restrained spicy phenolic character, keeping the beer approachable while maintaining the complexity of a well-crafted wheat beer. ", 
+            "beerABV": 5.5,
+            "beerPrimaryColor": "#F9CB5F",
+            "url": "https://untappd.com/b/weldwerks-brewing-co-hefeweizen/985125"
+        },
+        {
+            "beerName": "HogWild IPA", 
+            "breweryName": "Aviator Brewing Company", 
+            "beerType": "American IPA", 
+            "breweryLocation": "NC", 
+            "beerDescription": "HogWild is a veritable fest of hops. This IPA is designed to let the hops shine through! The flavor is not hidden with sweet malts and is brewed with Chinook, Columbus, Cascade, then dry hopped with Magnum and Willamette. Go Wild with this refreshing IPA", 
+            "beerABV": 6.7,
+            "beerPrimaryColor": "#ff9929",
+            "url": "https://untappd.com/b/aviator-brewing-company-hogwild-ipa/9230"
+        },
+        {
+            "beerName": "Rocket Science", 
+            "breweryName": "Fullsteam", 
+            "beerType": "American IPA", 
+            "breweryLocation": "Durham, NC", 
+            "beerDescription": "Rocket Science is a true-to-style American IPA inspired by the quest for harmony. We longed for an IPA that exuded confidence in its restraint, that paired well with any meal, and that wouldn’t destroy your palate. We found equilibrium in the optimal balance of sweet malts and bitter hops, an IPA both refreshing and refined.", 
+            "beerABV": 7,
+            "beerPrimaryColor": "#ffae40",
+            "url": "https://untappd.com/b/fullsteam-rocket-science/7146"
+        },
+        {
+            "beerName": "Surf Wax IPA", 
+            "breweryName": "Burial Beer Co.", 
+            "beerType": "American IPA", 
+            "breweryLocation": "Asheville, NC", 
+            "beerDescription": "If you want the ultimate, you've got to be willing to pay the ultimate price. But are you crazy enough? Show those guys that are inching their way on the freeways in their metal coffins that the human sprit is still alive. Mosaic. Citra. Centennial. Columbus. Lots of barley. Touch of wheat. The sea swallows the Sun. And who knows if it rises again. Vaya con dios.", 
+            "beerABV": 6.8,
+            "beerPrimaryColor": "#ff9001",
+            "url": "https://untappd.com/b/burial-beer-co-surf-wax-ipa/510047"
+        }
+    ]
+}
