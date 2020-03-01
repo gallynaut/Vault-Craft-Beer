@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import PropTypes from 'prop-types'
 
+
 import { makeStyles } from '@material-ui/core/styles';
 import { 
   IconButton,
@@ -9,6 +10,7 @@ import {
   Divider,
   Hidden,
   Card,
+  Link,
   CardActions,
   CardContent,
   Typography,
@@ -120,7 +122,7 @@ function BeerCard(props) {
         <IconButton aria-label="add to favorites" onClick={ likeToggle }>
           <FavoriteIcon color={isLiked ? "secondary" : "primary"} />
         </IconButton>
-        <IconButton aria-label="share" onClick={()=> window.open(props.url, "_blank")}>
+        <IconButton aria-label="share" component={Link} href={props.url} rel="noopener" target="_blank"> 
           <ShareIcon />
         </IconButton>
         

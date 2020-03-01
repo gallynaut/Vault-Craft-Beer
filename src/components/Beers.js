@@ -80,7 +80,7 @@ function Beers(props) {
         color={beer.beerSRM}
         isLiked={ likes[beer.beerName] ? true : false }
         toggleLike={ () => toggleLikeDispatch({type: 'TOGGLE', payload: beer.beerName }) }
-        url={beer.unTappdURL}
+        url={beer.untappdURL}
     />
   </Grid>
   )
