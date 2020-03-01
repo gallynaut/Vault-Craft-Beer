@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import PropTypes from 'prop-types'
 
+
 import { makeStyles } from '@material-ui/core/styles';
 import { 
   IconButton,
@@ -9,6 +10,7 @@ import {
   Divider,
   Hidden,
   Card,
+  Link,
   CardActions,
   CardContent,
   Typography,
@@ -43,6 +45,9 @@ const useStyles = makeStyles(theme => ({
     height: 64,
     width: 64,
     top: theme.spacing(2),
+    [theme.breakpoints.down('md')]: {
+      right: theme.spacing(4),
+    },
     // right: theme.spacing(2),
   },
   avatarSmall: {
@@ -55,20 +60,16 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function BeerCard(props) {
-  // const [beer, setBeer] = useState({...initialProps})
-  // const { name, brewery, type, location, description, abv, color, isLiked, toggleLike, url } = props
-  const [isLiked, setLiked] = useState(props.isLiked)
-  // const [, updateState] = React.useState();
-  // const forceUpdate = React.useCallback(() => updateState({}), []);
+  const [isLiked, setIsLiked] = useState(props.isLiked)
 
   const likeToggle = () => {
     props.toggleLike()
-    setLiked(!isLiked)
-    console.log("updating")
+    setIsLiked(!isLiked)
   }
-  // useEffect(() => {
-  //   setLiked(props.liked)
-  // }, [props.liked])
+
+  useEffect(() => {
+    setIsLiked(props.isLiked)
+  }, [props.isLiked])
 
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
@@ -121,7 +122,7 @@ function BeerCard(props) {
         <IconButton aria-label="add to favorites" onClick={ likeToggle }>
           <FavoriteIcon color={isLiked ? "secondary" : "primary"} />
         </IconButton>
-        <IconButton aria-label="share" onClick={()=> window.open(props.url, "_blank")}>
+        <IconButton aria-label="share" component={Link} href={props.url} rel="noopener" target="_blank"> 
           <ShareIcon />
         </IconButton>
         
@@ -139,7 +140,6 @@ BeerCard.propTypes = {
   location: PropTypes.string.isRequired,
   color: PropTypes.string,
   isLiked: PropTypes.bool.isRequired,
-  allLikes: PropTypes.any,
   liked: PropTypes.bool,
   toggleLike: PropTypes.func,
 }
